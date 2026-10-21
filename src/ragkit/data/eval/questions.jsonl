@@ -1,0 +1,45 @@
+{"id": "q01", "question": "How many days of paid time off do full-time employees get each year?", "gold": ["hr-pto-policy"]}
+{"id": "q02", "question": "Can I carry unused vacation days into next year?", "gold": ["hr-pto-policy"]}
+{"id": "q03", "question": "How long is parental leave for a primary caregiver?", "gold": ["hr-parental-leave"]}
+{"id": "q04", "question": "Do I need to come into the office, and on which days?", "gold": ["hr-remote-work"]}
+{"id": "q05", "question": "What is the home office stipend amount?", "gold": ["hr-remote-work"]}
+{"id": "q06", "question": "What is the daily meal limit when travelling internationally?", "gold": ["hr-expense-policy"]}
+{"id": "q07", "question": "When am I allowed to book premium economy?", "gold": ["hr-expense-policy"]}
+{"id": "q08", "question": "How many days do I have to submit a receipt for reimbursement?", "gold": ["hr-expense-policy"]}
+{"id": "q09", "question": "When are promotion packets due?", "gold": ["hr-performance-reviews"]}
+{"id": "q10", "question": "Which trainings must new hires finish in their first two weeks?", "gold": ["hr-onboarding-checklist"]}
+{"id": "q11", "question": "My laptop was stolen, what should I do?", "gold": ["hr-equipment-policy", "security-incident-response"]}
+{"id": "q12", "question": "How often are laptops replaced?", "gold": ["hr-equipment-policy"]}
+{"id": "q13", "question": "How quickly must the primary on-call acknowledge a page?", "gold": ["eng-oncall-runbook"]}
+{"id": "q14", "question": "How much do engineers get paid for being on call?", "gold": ["eng-oncall-runbook"]}
+{"id": "q15", "question": "What counts as a SEV1 incident?", "gold": ["eng-incident-severity"]}
+{"id": "q16", "question": "What percentage of traffic does a canary deploy get and for how long?", "gold": ["eng-deploy-process"]}
+{"id": "q17", "question": "Are production deploys allowed on Friday afternoon?", "gold": ["eng-deploy-process"]}
+{"id": "q18", "question": "How many approvals does a pull request to fleet-core need?", "gold": ["eng-code-review"]}
+{"id": "q19", "question": "How are releases named?", "gold": ["eng-branching-release"]}
+{"id": "q20", "question": "How do I ship a hotfix before the next release train?", "gold": ["eng-branching-release"]}
+{"id": "q21", "question": "What is the expand and contract pattern for schema changes?", "gold": ["eng-database-migrations"]}
+{"id": "q22", "question": "What batch size should backfills use?", "gold": ["eng-database-migrations"]}
+{"id": "q23", "question": "How long are application logs kept?", "gold": ["eng-logging-observability", "legal-data-retention"]}
+{"id": "q24", "question": "What is the availability SLO for the Beacon API?", "gold": ["eng-logging-observability"]}
+{"id": "q25", "question": "How often do secrets have to be rotated?", "gold": ["eng-secrets-management"]}
+{"id": "q26", "question": "What is the break-glass procedure if Vault is down during an incident?", "gold": ["eng-secrets-management"]}
+{"id": "q27", "question": "How much weight can the Atlas robot carry?", "gold": ["product-atlas-picker-spec"]}
+{"id": "q28", "question": "How long does the Atlas battery last and how fast does it charge?", "gold": ["product-atlas-picker-spec"]}
+{"id": "q29", "question": "How many robots can one Relay instance manage?", "gold": ["product-relay-fleet-manager"]}
+{"id": "q30", "question": "What happens to a site if the connection to the Helios cloud is lost?", "gold": ["product-relay-fleet-manager"]}
+{"id": "q31", "question": "What is the Beacon API rate limit per key?", "gold": ["product-beacon-api"]}
+{"id": "q32", "question": "How are webhook payloads signed?", "gold": ["product-beacon-api"]}
+{"id": "q33", "question": "Which hardware revisions does firmware 4.2 support?", "gold": ["product-firmware-release-notes"]}
+{"id": "q34", "question": "What is Atlas Lift?", "gold": ["product-roadmap-2026"]}
+{"id": "q35", "question": "How fast may a robot move when it is close to a person?", "gold": ["product-safety-certification", "product-atlas-picker-spec"]}
+{"id": "q36", "question": "What is the P1 response time for Enterprise support customers?", "gold": ["support-sla-tiers"]}
+{"id": "q37", "question": "What information is required on an escalation ticket?", "gold": ["support-escalation-process"]}
+{"id": "q38", "question": "What Wi-Fi signal strength is required in the aisles before go-live?", "gold": ["support-site-deployment-checklist"]}
+{"id": "q39", "question": "How do I connect to production systems from home?", "gold": ["it-vpn-access", "hr-remote-work"]}
+{"id": "q40", "question": "Who do I contact if I receive a phishing email?", "gold": ["security-incident-response"]}
+{"id": "q41", "question": "How long does admin access last before it expires?", "gold": ["security-access-requests"]}
+{"id": "q42", "question": "When do I need three quotes for a purchase?", "gold": ["finance-procurement-policy"]}
+{"id": "q43", "question": "How long are robot camera images retained?", "gold": ["legal-data-retention"]}
+{"id": "q44", "question": "What is the replacement cost for a lost badge?", "gold": ["facilities-office-badge"]}
+{"id": "q45", "question": "Who can approve a 25 percent discount?", "gold": ["sales-discount-policy"]}
