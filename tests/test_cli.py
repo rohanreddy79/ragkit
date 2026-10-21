@@ -1,9 +1,24 @@
 import json
+import re
 from pathlib import Path
 
 from typer.testing import CliRunner
 
 from ragkit.cli import app
+
+_ANSI = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
+
+
+def _plain(text: str) -> str:
+    """Strip ANSI styling and rich box drawing and collapse whitespace.
+
+    GitHub Actions makes typer force a colored 80-column terminal, which wraps and styles
+    error messages; assertions compare against the plain text instead.
+    """
+    text = _ANSI.sub("", text)
+    text = re.sub(r"[\u2502\u256d\u256e\u2570\u256f\u2500]", " ", text)
+    return " ".join(text.split())
+
 
 runner = CliRunner()
 
@@ -40,9 +55,9 @@ def test_ingest_query_ask_roundtrip(tmp_path: Path, corpus_dir: Path) -> None:
 
 def test_cli_errors(tmp_path: Path, corpus_dir: Path) -> None:
     r = runner.invoke(app, ["query", "x", "--db", str(tmp_path / "missing.db")])
-    assert r.exit_code == 1 and "does not exist" in r.output
+    assert r.exit_code == 1 and "does not exist" in _plain(r.output)
     r = runner.invoke(app, ["ingest", str(tmp_path / "nowhere"), "--db", str(tmp_path / "a.db")])
-    assert r.exit_code == 1 and "error" in r.output
+    assert r.exit_code == 1 and "error" in _plain(r.output)
     r = runner.invoke(app, ["query", "x", "--db", str(tmp_path / "a.db"), "--mode", "fuzzy"])
     assert r.exit_code == 1
     db = tmp_path / "b.db"
